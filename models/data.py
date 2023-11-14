@@ -7,7 +7,7 @@ class Response:
     status_code: int
     data: Any
 
-    def get(self, key: str) -> Any:
+    def get(self, key: int) -> Any:
         if isinstance(self.data, dict):
             return self.data.get(key)
         return None
