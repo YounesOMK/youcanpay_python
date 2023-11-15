@@ -24,7 +24,11 @@ jobs:
         pip install poetry
         poetry install
         
+    - name: Run mypy
+      run: poetry run mypy .
+
     - name: Run tests
+      if: github.event_name == 'pull_request'
       run: poetry run pytest .
 
     - name: Run black
