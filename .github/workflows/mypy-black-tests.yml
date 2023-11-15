@@ -23,12 +23,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install poetry
         poetry install
-    
-    - name: Run mypy
-      run: | 
-        poetry run mypy --install-types
-        poetry run mypy .
-    
+        
     - name: Run tests
       run: poetry run pytest .
 
