@@ -1,11 +1,13 @@
-name: Run mypy
+name: Mypy, Black and Tests
 
 on:
   pull_request:
     branches: [ main ]
+  push:
+    branches: [ main ]
 
 jobs:
-  type-check:
+  types-formatting-tests:
     runs-on: ubuntu-latest
     steps:
     - name: Check out repository
@@ -24,3 +26,10 @@ jobs:
     
     - name: Run mypy
       run: poetry run mypy .
+    
+    - name: Run tests
+      run: poetry run pytest .
+
+    - name: Run black
+      run: poetry run black --check .
+    
