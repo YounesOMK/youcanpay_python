@@ -1,6 +1,6 @@
 from typing import Optional
-from adapters.adapter_picker import HttpAdapterPicker
-from models.data import Response
+from youcanpay_python.adapters.adapter_picker import HttpAdapterPicker
+from youcanpay_python.models.data import Response
 
 
 class APIService:
