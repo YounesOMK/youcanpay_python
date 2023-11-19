@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 import os
 from urllib.parse import urljoin
 
-from youcanpay_python.models.data import Response
+from youcanpay.models.data import Response
 
 
 class BaseHttpAdapter(ABC):

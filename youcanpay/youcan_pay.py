@@ -1,6 +1,6 @@
-from youcanpay_python.adapters.adapter_picker import HttpAdapterPicker
-from youcanpay_python.api.endpoints import KeysEndpoint, TokenEndpoint
-from youcanpay_python.api.service import APIService
+from youcanpay.adapters.adapter_picker import HttpAdapterPicker
+from youcanpay.api.endpoints import KeysEndpoint, TokenEndpoint
+from youcanpay.api.service import APIService
 
 
 class YouCanPay:
