@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "youcanpay-python"
+name = "youcanpay"
 version = "0.1.0"
 description = "Wrapper arround YouCanPay gateway"
 authors = ["Younes Oumakhou <younesoumakhousudo@gmail.com>"]
