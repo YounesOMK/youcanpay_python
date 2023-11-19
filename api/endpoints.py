@@ -103,7 +103,6 @@ class TokenEndpoint(BaseEndpoint):
         return Token.create_from_dict(response_data)
 
     def assert_response(self, response: Response):
-        print(response)
         if response.status_code == 200:
             if not isinstance(response.get("token"), dict) or "id" not in response.get(
                 "token"
