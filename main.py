@@ -1,6 +1,6 @@
 from ipaddress import ip_address
 from models.data import Customer
-from you_can_pay import YouCanPay
+from youcan_pay import YouCanPay
 from models.token import TokenData
 
 

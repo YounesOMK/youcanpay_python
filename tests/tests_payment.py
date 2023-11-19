@@ -4,7 +4,7 @@ from api.endpoints import KeysEndpoint, TokenEndpoint
 
 from api.service import APIService
 from models.data import Response
-from you_can_pay import YouCanPay
+from youcan_pay import YouCanPay
 
 
 class TestYouCanPay(unittest.TestCase):
