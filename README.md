@@ -7,8 +7,8 @@ Python wrapper arround YouCanPay gateway
 
 Install `youcanpay-python` using pip:
 
-```
-pip install youcanpay-python
+```bash
+pip install youcanpay
 ```
 
 ## Usage Example
@@ -56,3 +56,4 @@ token_params = TokenData(
 
 # Create the token and get the payment URL
 token = youcan_pay.token.create_from(token_params)
+payment_url = token.get_payment_url()
