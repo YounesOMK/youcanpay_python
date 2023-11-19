@@ -1,8 +1,9 @@
 from abc import ABC, abstractmethod
 from typing import Optional
-from api.service import APIService
 
-from exceptions.exceptions import (
+
+from youcanpay_python.api.service import APIService
+from youcanpay_python.exceptions.exceptions import (
     MissingTokenException,
     ServerException,
     UnexpectedResultException,
@@ -11,8 +12,8 @@ from exceptions.exceptions import (
     UnsupportedResponseException,
     ValidationException,
 )
-from models.data import Response
-from models.token import TokenData, Token
+from youcanpay_python.models.data import Response
+from youcanpay_python.models.token import Token, TokenData
 
 
 class BaseEndpoint(ABC):

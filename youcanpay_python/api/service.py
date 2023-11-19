@@ -1,6 +1,6 @@
 from typing import Optional
-from adapters.adapter_picker import HttpAdapterPicker
-from models.data import Response
+from youcanpay_python.adapters.adapter_picker import HttpAdapterPicker
+from youcanpay_python.models.data import Response
 
 
 class APIService:
@@ -9,7 +9,6 @@ class APIService:
 
     def __init__(self, adapter_picker: HttpAdapterPicker):
         self.http_adapter = adapter_picker.pick(APIService.is_sandbox_mode)
-
         self.private_key: Optional[str] = None
         self.public_key: Optional[str] = None
 

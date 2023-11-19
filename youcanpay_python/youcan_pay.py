@@ -1,6 +1,6 @@
-from adapters.adapter_picker import HttpAdapterPicker
-from api.endpoints import KeysEndpoint, TokenEndpoint
-from api.service import APIService
+from youcanpay_python.adapters.adapter_picker import HttpAdapterPicker
+from youcanpay_python.api.endpoints import KeysEndpoint, TokenEndpoint
+from youcanpay_python.api.service import APIService
 
 
 class YouCanPay:
@@ -13,9 +13,8 @@ class YouCanPay:
         self.keys = KeysEndpoint(api_service)
 
     def use_keys(self, private_key: str, public_key: str):
-        api_service = APIService(HttpAdapterPicker())
-        api_service.use_keys(private_key, public_key)
-        self.init_endpoints(api_service)
+        self.api_service.use_keys(private_key, public_key)
+        self.init_endpoints(self.api_service)
         return self
 
     @classmethod

@@ -1,4 +1,4 @@
-from adapters.http_adapters import RequestsHttpAdapter
+from youcanpay_python.adapters.http_adapters import RequestsHttpAdapter
 
 
 class HttpAdapterPicker:
