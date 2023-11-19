@@ -2,7 +2,7 @@ import os
 import unittest
 from unittest.mock import Mock, patch
 
-from youcanpay_python.adapters.http_adapters import RequestsHttpAdapter
+from youcanpay.adapters.http_adapters import RequestsHttpAdapter
 
 
 class TestRequestsHttpAdapter(unittest.TestCase):

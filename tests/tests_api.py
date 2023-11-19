@@ -1,14 +1,14 @@
 import unittest
 from unittest.mock import Mock
-from youcanpay_python.api.endpoints import KeysEndpoint, TokenEndpoint
+from youcanpay.api.endpoints import KeysEndpoint, TokenEndpoint
 
-from youcanpay_python.api.service import APIService
-from youcanpay_python.exceptions.exceptions import (
+from youcanpay.api.service import APIService
+from youcanpay.exceptions.exceptions import (
     ServerException,
     UnsupportedResponseException,
 )
-from youcanpay_python.models.data import Response
-from youcanpay_python.models.token import TokenData
+from youcanpay.models.data import Response
+from youcanpay.models.token import TokenData
 
 
 class TestAPIService(unittest.TestCase):

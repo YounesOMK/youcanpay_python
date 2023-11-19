@@ -5,6 +5,7 @@ description = "Wrapper arround YouCanPay gateway"
 authors = ["Younes Oumakhou <younesoumakhousudo@gmail.com>"]
 license = "MIT"
 readme = "README.md"
+repository = "https://github.com/YounesOMK/youcanpay_python"
 
 [tool.poetry.dependencies]
 python = "^3.10"

@@ -2,8 +2,8 @@ from abc import ABC, abstractmethod
 from typing import Optional
 
 
-from youcanpay_python.api.service import APIService
-from youcanpay_python.exceptions.exceptions import (
+from youcanpay.api.service import APIService
+from youcanpay.exceptions.exceptions import (
     MissingTokenException,
     ServerException,
     UnexpectedResultException,
@@ -12,8 +12,8 @@ from youcanpay_python.exceptions.exceptions import (
     UnsupportedResponseException,
     ValidationException,
 )
-from youcanpay_python.models.data import Response
-from youcanpay_python.models.token import Token, TokenData
+from youcanpay.models.data import Response
+from youcanpay.models.token import Token, TokenData
 
 
 class BaseEndpoint(ABC):

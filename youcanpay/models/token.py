@@ -1,9 +1,9 @@
 from dataclasses import dataclass, field
 from typing import Any, Dict, Optional
-from youcanpay_python.adapters.http_adapters import BaseHttpAdapter
-from youcanpay_python.api.service import APIService
+from youcanpay.adapters.http_adapters import BaseHttpAdapter
+from youcanpay.api.service import APIService
 
-from youcanpay_python.models.data import Customer
+from youcanpay.models.data import Customer
 
 
 @dataclass
