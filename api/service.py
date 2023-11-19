@@ -9,7 +9,6 @@ class APIService:
 
     def __init__(self, adapter_picker: HttpAdapterPicker):
         self.http_adapter = adapter_picker.pick(APIService.is_sandbox_mode)
-
         self.private_key: Optional[str] = None
         self.public_key: Optional[str] = None
 

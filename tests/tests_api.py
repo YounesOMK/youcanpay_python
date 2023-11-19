@@ -1,9 +1,5 @@
-from io import UnsupportedOperation
-import os
 import unittest
-from unittest import result
-from unittest.mock import Mock, patch
-from adapters.http_adapters import RequestsHttpAdapter
+from unittest.mock import Mock
 from api.endpoints import KeysEndpoint, TokenEndpoint
 from api.service import APIService
 from exceptions.exceptions import ServerException, UnsupportedResponseException
