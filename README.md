@@ -1,11 +1,11 @@
 [![Mypy, Black and Tests](https://github.com/YounesOMK/youcanpay_python/actions/workflows/mypy-black-tests.yml/badge.svg?branch=main)](https://github.com/YounesOMK/youcanpay_python/actions/workflows/mypy-black-tests.yml)
 # youcanpay_python
-Python wrapper arround YouCanPay gateway
+Python wrapper arround [YouCanPay gateway](https://youcanpay.com)
 
 
 ## Installation
 
-Install `youcanpay-python` using pip:
+Install `youcanpay` using pip:
 
 ```bash
 pip install youcanpay
@@ -45,8 +45,8 @@ metadata = {"item_id": "A123", "campaign": "Summer Sale"}
 # Configure order details
 token_params = TokenData(
     order_id="OR238472",
-    amount="2000",
-    currency="MAD",
+    amount="20",
+    currency="USD",
     customer_ip="123.123.123.123",
     success_url="https://example.com/success",
     error_url="https://example.com/error",
