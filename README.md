@@ -3,7 +3,7 @@
 [![Mypy, Black and Tests](https://github.com/YounesOMK/youcanpay_python/actions/workflows/mypy-black-tests.yml/badge.svg?branch=main)](https://github.com/YounesOMK/youcanpay_python/actions/workflows/mypy-black-tests.yml)
 
 
-Python wrapper arround [YouCanPay gateway](https://youcanpay.com)
+Python wrapper arround [YouCanPay gateway](https://youcanpay.com/docs)
 
 ## Installation
 
